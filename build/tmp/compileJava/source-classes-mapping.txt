@@ -1,0 +1,16 @@
+com/amela/repository/UserRepository.java
+ com.amela.repository.UserRepository
+com/amela/repository/IUserRepository.java
+ com.amela.repository.IUserRepository
+com/amela/controller/UserController.java
+ com.amela.controller.UserController
+com/amela/configuration/Appconfig.java
+ com.amela.configuration.Appconfig
+com/amela/model/User.java
+ com.amela.model.User
+com/amela/configuration/AppInit.java
+ com.amela.configuration.AppInit
+com/amela/service/UserService.java
+ com.amela.service.UserService
+com/amela/service/IUserService.java
+ com.amela.service.IUserService

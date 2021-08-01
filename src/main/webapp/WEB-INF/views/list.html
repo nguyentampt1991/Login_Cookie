@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/login">Back to Login</a>
+<h1>Users</h1>
+
+
+<table border="1">
+    <tr>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>s
+    <th:block th:each="user : ${user}">
+        <tr>
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.password}"></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

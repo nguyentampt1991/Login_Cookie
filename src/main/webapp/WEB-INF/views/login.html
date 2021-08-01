@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Cookie Demo</title>
+</head>
+<body>
+<h1>User Login</h1>
+<form action="#" th:action="@{/checklogin}" th:object="${login}"  method="post">
+    <table border="0">
+        <tr>
+            <td><label>User Name</label></td>
+            <td><input type="text" name="username"
+                       th:value="${cookieValue.value}" />
+            <td th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Name Error</td>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="password"    th:field="*{password}" />
+<!--            <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Name Error</td>-->
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Login"/>
+</form>
+<br>
+<span th:text="${message}"></span>
+<span th:text="${login.username}"></span><br>
+
+</body>
+</html>
